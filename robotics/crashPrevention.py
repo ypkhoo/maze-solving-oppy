@@ -10,6 +10,16 @@ def driveToObs():
         tmpDist = distCheck()
     return tmpDist
 
+def checkAllDist(): 
+    frontDist = distCheck()
+    pivot_left(0.3)
+    leftDist = distCheck()
+    pivot_right(0.6)
+    rightDist = distCheck()
+    pivot_left(0.3)
+    distList = [rightDist, leftDist, frontDist]
+    return distList
+
 def distCheck():
     tmpDist = sensor.distance() 
     if tmpDist <= 20: 
