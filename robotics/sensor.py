@@ -29,4 +29,3 @@ def distance():
     
     GPIO.cleanup()
     return distance
-

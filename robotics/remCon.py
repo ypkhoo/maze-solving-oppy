@@ -1,3 +1,5 @@
+from movement import *
+
 try: 
     import Tkinter as tk
 except ImportError: 
