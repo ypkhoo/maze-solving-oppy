@@ -68,7 +68,17 @@ def pivot_right(timeFrame):
     GPIO.output(13, True)
     GPIO.output(15, False)
     time.sleep(timeFrame)
-    GPIO.cleanup() 
+    GPIO.cleanup()
+
+def checkAllDist(): 
+    frontDist = distCheck()
+    pivot_left(0.3)
+    leftDist = distCheck()
+    pivot_right(0.6)
+    rightDist = distCheck()
+    pivot_left(0.3)
+    distList = [rightDist, leftDist, frontDist]
+    return distList
 
 def testMvmt(timeFrame): 
     init()
