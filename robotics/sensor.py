@@ -21,7 +21,7 @@ def distance():
     while GPIO.input(ECHO) == 0: 
         noSignal = time.time() 
     while GPIO.input(ECHO) == 1:
-        signal = time.time() 
+        signal = time.time()
 
     timeDiff = signal - noSignal 
 
@@ -29,3 +29,4 @@ def distance():
     
     GPIO.cleanup()
     return distance
+
