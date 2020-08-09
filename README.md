@@ -3,3 +3,5 @@ Self-driving cars are popular in this day and age. I fancy the idea of programmi
 
 Check out the progress photos and videos: 
 https://photos.app.goo.gl/Gsa6xMEW1rg86o4Y9
+
+ps: this project is stalled after my Student Academic Conference
